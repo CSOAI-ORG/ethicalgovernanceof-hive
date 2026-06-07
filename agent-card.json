@@ -1,0 +1,76 @@
+{
+  "name": "ethicalgovernanceof",
+  "description": "Ethics-first governance — the moral reasoning layer.",
+  "url": "https://ethicalgovernanceof.ai",
+  "version": "0.1.0",
+  "provider": {
+    "organization": "CSOAI-ORG",
+    "url": "https://csoai.org"
+  },
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text",
+    "json"
+  ],
+  "skills": [
+    {
+      "id": "meok-governance-engine-mcp",
+      "name": "meok-governance-engine-mcp",
+      "description": "Tool: meok-governance-engine-mcp (part of ethicalgovernanceof.ai hive L5)"
+    },
+    {
+      "id": "care-membrane-mcp",
+      "name": "care-membrane-mcp",
+      "description": "Tool: care-membrane-mcp (part of ethicalgovernanceof.ai hive L5)"
+    },
+    {
+      "id": "ai-bom-mcp",
+      "name": "ai-bom-mcp",
+      "description": "Tool: ai-bom-mcp (part of ethicalgovernanceof.ai hive L5)"
+    },
+    {
+      "id": "explainability-report-mcp",
+      "name": "explainability-report-mcp",
+      "description": "Tool: explainability-report-mcp (part of ethicalgovernanceof.ai hive L5)"
+    },
+    {
+      "id": "a2a-mesh",
+      "name": "Cross-hive A2A call",
+      "description": "Can call other MEOK hives via A2A (with user consent)"
+    },
+    {
+      "id": "memoria-commit",
+      "name": "Versioned memory commit",
+      "description": "Commits to memoria namespace 'ethicalgovernanceof'"
+    }
+  ],
+  "securitySchemes": {
+    "oauth2": {
+      "type": "oauth2",
+      "flows": {
+        "authorizationCode": {
+          "authorizationUrl": "https://ethicalgovernanceof.ai/oauth/authorize",
+          "tokenUrl": "https://ethicalgovernanceof.ai/oauth/token",
+          "scopes": {
+            "read": "Read hive state",
+            "write": "Invoke tools (x402-metered)",
+            "audit": "Read audit trail"
+          }
+        }
+      }
+    }
+  },
+  "x402Pricing": {
+    "enabled": false,
+    "currency": "USD",
+    "amount": "0.00",
+    "freeCallsPerIPPerDay": "5"
+  }
+}
