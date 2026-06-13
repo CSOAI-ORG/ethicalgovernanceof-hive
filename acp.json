@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "ethicalgovernanceof",
+    "description": "Ethics-first governance \u2014 the moral reasoning layer.",
+    "version": "0.1.0",
+    "provider": "CSOAI-ORG",
+    "interfaces": [
+      {
+        "type": "a2a",
+        "url": "https://ethicalgovernanceof.ai"
+      }
+    ],
+    "capabilities": [
+      "meok-governance-engine-mcp",
+      "care-membrane-mcp",
+      "ai-bom-mcp",
+      "explainability-report-mcp",
+      "a2a-mesh",
+      "memoria-commit"
+    ]
+  }
+}
