@@ -1,0 +1,14 @@
+{
+  "name": "ethicalgovernanceof.ai",
+  "title": "Ethical Governance of AI",
+  "description": "Framework and oversight for ethical AI governance, human rights impact assessments, and value alignment.",
+  "cluster": "TRUST-GOVERNANCE",
+  "servers": [
+        { "id": "ethics-mcp.sov3.meok.ai", "url": "https://ethics-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "rights-impact-mcp.sov3.meok.ai", "url": "https://rights-impact-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "values-mcp.sov3.meok.ai", "url": "https://values-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" }
+  ],
+  "registrar": "https://mcp-registry.sov3.meok.ai/register",
+  "protocol": "https://openMCP.ai/protocol",
+  "$schema": "https://openMCP.ai/schemas/mcp-server-list.json"
+}
